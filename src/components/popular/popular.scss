@@ -1,0 +1,258 @@
+:root{
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: 0 2px 8px 2px rgba(85, 3, 3, 0.226);
+
+}
+.popular{
+    padding-top: 25rem;
+
+    .secContainer{
+        .secHeader{
+
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            bottom: auto;
+
+            .textDiv{
+                .secTitle{
+                    color: var(--blackColor);
+                    line-height: 1.5rem;
+                    padding-bottom: .5rem;
+                }
+
+                p{
+                    font-size: 13px;
+                    color: var(--textColor);
+                    font-weight: 500;
+                    
+                }
+            }
+
+           
+          
+        }
+        .iconsDiv{
+            gap: 0.5rem;
+            .icon{
+                padding:.5rem;
+                background: var(--greyText);
+                border-radius: 50%;
+                font-size: 2.5rem;
+                &:hover{
+                    color: var(--blackColor);
+                    column-rule: var(--whiteColor);
+                }
+               
+            }
+            .leftIcon{
+                background: var(--blackColor);
+                color: var(--whiteColor);
+                &:hover{
+                    background: var(--greyText);
+                    color: var(--blackColor);
+                }
+            }
+            .rightIcon{
+                background: var(--whiteColor);
+                color: var(--blackColor);
+                &:hover{
+                    background: var(--blackColor);
+                    color: var(--whiteColor);
+                }
+            }
+            
+        }
+    }
+
+    .mainContent{
+        padding: 2rem 0;
+        .singleDestination{
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px 2px rgba(85, 3, 3, 0.226);
+        }
+        .destImg{
+            width: 100%;
+            height: 290px;
+            position: relative;
+            overflow: hidden;
+          
+          
+                img{
+                    height: 65%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    padding: .5rem;
+                    gap: 1rem;
+                    bottom: -1%;
+                    top: 0%;
+                    left: 1%;
+                  
+                }
+            
+            
+        }
+        .overlayInfo{
+            // position: absolute;
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: center;
+            // padding: 0;
+            // flex-direction: column;
+            // background: rgba(85, 3, 3, 0.226);
+            // bottom: 0;
+            // overflow: hidden;
+            // width: 100%;
+            // height: 100%;
+            padding: .5rem;
+            justify-content: space-between;
+
+            .divLeft{
+                .starIconsDiv{
+                    font-size: 10px;
+                    color: rgba(248, 192, 6, 0.938);
+                    .icon{
+                        font-size: 22px;
+                    }
+                }
+            }
+            .divRight{
+                text-align: right;
+                // padding-left: 22%;
+               
+                .people{
+                    color: var(--PrimaryColor);
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 556px) {
+    .popular{
+        .secContainer{
+            .mainContent{
+              grid-template-columns: repeat(2,1fr);
+                // padding: .5rem;
+            }
+        }
+    }  
+}
+
+
+@media screen and (min-width: 769px) {
+    .popular{
+    padding-top: 8rem;
+        .secContainer{
+            .secHeader{
+
+                justify-content: space-between;
+    
+                .textDiv{
+                    align-items: left;
+                    text-align: left;
+                    // gap: 1rem;
+                    // bottom: 50px;
+                    margin-left: -40%;
+                    margin-bottom: -3rem;
+                    justify-content: space-between;
+
+                    .secTitle{
+                        color: var(--blackColor);
+                        line-height: 1.5rem;
+                        padding-bottom: .5rem;
+                    }
+    
+                    p{
+                        font-size: 13px;
+                        color: var(--textColor);
+                        font-weight: 500;
+                        
+                        
+                    }
+                }
+    
+               
+              
+            }
+            .iconsDiv{
+                gap: 0.5rem;
+                display: flex;
+                align-items: right;
+                text-align: right;
+                margin-left: 47rem;
+
+                .icon{
+                    padding:.5rem;
+                    display: flex;
+                    background: var(--greyText);
+                    border-radius: 50%;
+                    font-size: 2.5rem;
+                    &:hover{
+                        color: var(--blackColor);
+                        column-rule: var(--whiteColor);
+                    }
+                   
+                }
+                .leftIcon{
+                    background: var(--blackColor);
+                    color: var(--whiteColor);
+                    &:hover{
+                        background: var(--greyText);
+                        color: var(--blackColor);
+                    }
+                }
+                
+            }
+
+            .mainContent{
+              grid-template-columns: repeat(4,1fr);
+
+              .overlayInfo{
+                // position: absolute;
+                // display: flex;
+                // align-items: flex-start;
+                // justify-content: center;
+                // padding: 0;
+                // flex-direction: column;
+                // background: rgba(85, 3, 3, 0.226);
+                // bottom: 0;
+                // overflow: hidden;
+                // width: 100%;
+                // height: 100%;
+                padding: 1rem;
+                justify-content: space-between;
+    
+                .divLeft{
+                    // padding: .5rem;
+                    .starIconsDiv{
+                        font-size: 10px;
+                        color: rgba(248, 192, 6, 0.938);
+                        .icon{
+                            font-size: 16px;
+                        }
+                    }
+                }
+    
+    
+            }
+
+            
+            }
+        }
+    }  
+}
+

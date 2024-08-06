@@ -1,0 +1,178 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --boxShadow: 0 2px 8px 2px rgba(85, 3, 3, 0.226);
+}
+
+.popular {
+  padding-top: 25rem;
+}
+.popular .secContainer .secHeader {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  bottom: auto;
+}
+.popular .secContainer .secHeader .textDiv .secTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.popular .secContainer .secHeader .textDiv p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.popular .secContainer .iconsDiv {
+  gap: 0.5rem;
+}
+.popular .secContainer .iconsDiv .icon {
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+.popular .secContainer .iconsDiv .icon:hover {
+  color: var(--blackColor);
+  -moz-column-rule: var(--whiteColor);
+       column-rule: var(--whiteColor);
+}
+.popular .secContainer .iconsDiv .leftIcon {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .secContainer .iconsDiv .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--blackColor);
+}
+.popular .secContainer .iconsDiv .rightIcon {
+  background: var(--whiteColor);
+  color: var(--blackColor);
+}
+.popular .secContainer .iconsDiv .rightIcon:hover {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .mainContent {
+  padding: 2rem 0;
+}
+.popular .mainContent .singleDestination {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(85, 3, 3, 0.226);
+}
+.popular .mainContent .destImg {
+  width: 100%;
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+}
+.popular .mainContent .destImg img {
+  height: 65%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  bottom: -1%;
+  top: 0%;
+  left: 1%;
+}
+.popular .mainContent .overlayInfo {
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.popular .mainContent .overlayInfo .divLeft .starIconsDiv {
+  font-size: 10px;
+  color: rgba(248, 192, 6, 0.938);
+}
+.popular .mainContent .overlayInfo .divLeft .starIconsDiv .icon {
+  font-size: 22px;
+}
+.popular .mainContent .overlayInfo .divRight {
+  text-align: right;
+}
+.popular .mainContent .overlayInfo .divRight .people {
+  color: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 556px) {
+  .popular .secContainer .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .popular {
+    padding-top: 8rem;
+  }
+  .popular .secContainer .secHeader {
+    justify-content: space-between;
+  }
+  .popular .secContainer .secHeader .textDiv {
+    align-items: left;
+    text-align: left;
+    margin-left: -40%;
+    margin-bottom: -3rem;
+    justify-content: space-between;
+  }
+  .popular .secContainer .secHeader .textDiv .secTitle {
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .popular .secContainer .secHeader .textDiv p {
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: 500;
+  }
+  .popular .secContainer .iconsDiv {
+    gap: 0.5rem;
+    display: flex;
+    align-items: right;
+    text-align: right;
+    margin-left: 47rem;
+  }
+  .popular .secContainer .iconsDiv .icon {
+    padding: 0.5rem;
+    display: flex;
+    background: var(--greyText);
+    border-radius: 50%;
+    font-size: 2.5rem;
+  }
+  .popular .secContainer .iconsDiv .icon:hover {
+    color: var(--blackColor);
+    -moz-column-rule: var(--whiteColor);
+         column-rule: var(--whiteColor);
+  }
+  .popular .secContainer .iconsDiv .leftIcon {
+    background: var(--blackColor);
+    color: var(--whiteColor);
+  }
+  .popular .secContainer .iconsDiv .leftIcon:hover {
+    background: var(--greyText);
+    color: var(--blackColor);
+  }
+  .popular .secContainer .mainContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .popular .secContainer .mainContent .overlayInfo {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .popular .secContainer .mainContent .overlayInfo .divLeft .starIconsDiv {
+    font-size: 10px;
+    color: rgba(248, 192, 6, 0.938);
+  }
+  .popular .secContainer .mainContent .overlayInfo .divLeft .starIconsDiv .icon {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=popular.css.map */

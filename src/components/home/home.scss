@@ -1,0 +1,187 @@
+:root{
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 50%, 3%);
+
+}
+
+
+.home{
+    height: 70vh;
+    background: linear-gradient(rgba(33,33,33,0.522),
+    rgba(33,33,33,0.522)),url('/src/Assets/images/home\ bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border-radius: 2rem;
+    width: 96%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .secContainer{
+        
+        .homeText{
+            text-align: center;
+          
+            .title{
+           
+                color: var(--whiteColor);
+                font-size: 1.3rem;
+                font-weight: 300;
+                line-height: 1.5rem;
+            }
+            .subTitle{
+                opacity: .9;
+                color: var(--whiteColor);
+                font-size: 10px;
+                font-weight: 300;
+                padding: 1rem 0;
+                max-width: 70%;
+                text-align: center;
+                margin: auto;
+                text-align: center;
+            }
+
+
+        }
+        .homeCard{
+            width: 80%;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: var(--whiteColor);
+            position: absolute;
+            gap: 1rem;
+            justify-content: center;
+            bottom: -80%;
+            top: 85%;
+            transform: translate(-50%);
+            left: 50%;
+            text-align: center;
+            box-shadow: 0 2px 8px 4px rgba(178, 178, 178,0.20);
+
+            .locationDiv, .checkInDiv, .checkOutDiv, .guestDiv{
+                width: 100%;
+                border-bottom:2px solid gray;
+              
+                  
+              
+              
+             
+                label{
+                   display: block;
+                   font-weight: 700;
+                   color: var(--blackColor);
+                   font-size: 13px;
+                   padding-bottom: .4rem; 
+                }
+              
+
+                input{
+                    width: 100%;
+                    color: var(--blackColor);
+                    border: none;
+                    text-align: center;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    
+                    &::placeholder{
+                        font-size: 13px;
+                        opacity: .5;
+                        font-weight: 400;
+                        
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                   
+                }
+            }
+            .guestDiv{
+                border: none;
+            }
+            .searchbtn{
+                color: var(--whiteColor);
+                background: var(--PrimaryColor);
+                width: 100%;
+                padding: .5rem;
+                border-radius: .5rem;
+                border: none;
+                .icon{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+   
+    .home{
+        
+        .secContainer{
+            .homeText{
+                .title{
+                    font-size: 22px;
+                }
+            }
+            .homeCard{
+                // bottom: 18px;
+                width: 90%;
+                grid-template-columns: repeat(2,1fr);
+                .searchbtn{
+                    margin-left:50%;
+                }
+                .guestDiv{
+                    border-bottom:2px solid gray;
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    
+    .home{
+    
+        .secContainer{
+           
+            .homeCard{
+                bottom: -55px;
+                width: 90%;
+                grid-template-columns: repeat(5,1fr);
+                .searchbtn{
+                    margin-left:10%;
+                    background: var(--blackColor);
+                    color: var(--whiteColor);
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    
+                }
+
+                .locationDiv, .checkInDiv, .checkOutDiv{
+                                border-right:2px solid gray;
+                                border-bottom: 0cap;
+                            }
+                .guestDiv{
+                   border: none;
+                    
+                }
+            }
+        }
+    }
+    
+}

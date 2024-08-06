@@ -1,0 +1,172 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.navBarSection .header {
+  background: transparent;
+}
+.navBarSection .header .logoDiv .logo {
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navBarSection .header .logoDiv .icon {
+  color: var(--PrimaryColor);
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .navBarSection .header {
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    z-index: 10000;
+  }
+  .navBarSection .topHeader {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .navBarSection .topHeader .logoDiv {
+    font-size: 13px;
+  }
+  .navBarSection .topHeader .logoDiv .logo .icon {
+    font-size: 20px;
+  }
+  .navBarSection .topHeader .headerBtns {
+    gap: 1rem;
+  }
+  .navBarSection .topHeader .headerBtns .signUpBtn {
+    background: var(--blackColor);
+    border-radius: 0;
+    font-size: 10px;
+    padding: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .navBarSection .topHeader .headerBtns .signUpBtn a {
+    color: var(--whiteColor);
+  }
+  .navBarSection .topHeader .headerBtns .loginBtn {
+    background: none;
+    display: none;
+  }
+  .navBarSection .topHeader .headerBtns .loginBtn a {
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .navBarSection .navBar {
+    background: var(--whiteColor);
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: -500%;
+    transition: 0.5s ease;
+    z-index: 1000;
+  }
+  .navBarSection .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navBarSection .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+  }
+  .navBarSection .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .navBarSection .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .navBarSection .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .navBarSection .navBar .closeNavbar:hover .icon {
+    color: var(--HoverColor);
+  }
+  .navBarSection .activeNavbar {
+    left: 0;
+  }
+}
+.navBarSection .toggoleNavbar {
+  padding: 1.5rem;
+}
+.navBarSection .toggoleNavbar .icon {
+  color: var(--whiteColor);
+  font-size: 25px;
+}
+.navBarSection .toggoleNavbar .icon:hover {
+  color: var(--whiteColor);
+}
+
+@media screen and (min-width: 769px) {
+  .navBarSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .navBarSection .topHeader {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2.5px solid gray;
+  }
+  .navBarSection .topHeader .headerBtns {
+    gap: 1rem;
+  }
+  .navBarSection .topHeader .headerBtns .signUpBtn {
+    background: var(--blackColor);
+    border-radius: 0;
+  }
+  .navBarSection .topHeader .headerBtns .signUpBtn a {
+    color: var(--whiteColor);
+    font-weight: 700;
+  }
+  .navBarSection .topHeader .headerBtns .loginBtn {
+    background: none;
+  }
+  .navBarSection .topHeader .headerBtns .loginBtn a {
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .navBarSection .toggoleNavbar, .navBarSection .closeNavbar {
+    display: none;
+  }
+  .navBarSection .header {
+    padding: 0.5rem 0rem;
+  }
+  .navBarSection .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink {
+    color: var(--blackColor);
+    padding: 0.45rem;
+    align-items: center;
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+}/*# sourceMappingURL=navbar.css.map */
